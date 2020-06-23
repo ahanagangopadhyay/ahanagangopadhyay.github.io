@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects - Ahana Gangopadhyay</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Ahana Gangopadhyay</a></h1>
+							<p>Ph.D. Candidate, Department of Electrical and Systems Engineering </br> 
+							   Washington University in St. Louis</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<!-- <li>
+									<a href="#">Dropdown</a>
+									<ul>
+										<li><a href="#">Lorem ipsum</a></li>
+										<li><a href="#">Magna veroeros</a></li>
+										<li><a href="#">Etiam nisl</a></li>
+										<li>
+											<a href="#">Sed consequat</a>
+											<ul>
+												<li><a href="#">Lorem dolor</a></li>
+												<li><a href="#">Amet consequat</a></li>
+												<li><a href="#">Magna phasellus</a></li>
+												<li><a href="#">Etiam nisl</a></li>
+												<li><a href="#">Sed feugiat</a></li>
+											</ul>
+										</li>
+										<li><a href="#">Nisl tempus</a></li>
+									</ul>
+								</li>
+								<li><a href="left-sidebar.html">Left Sidebar</a></li>
+								<li><a href="right-sidebar.html">Right Sidebar</a></li>
+								<li class="current"><a href="no-sidebar.html">No Sidebar</a></li> -->
+								<li><a href="about.html">About</a></li>
+								<li><a href="projects.html">Projects</a></li>
+								<li><a href="publications.html">Publications</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style2">
+					<div class="title">Thesis</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<article class="box post">
+									<header class="style1">
+										<h2 style="color:lightcoral">Growth Transform neuron and population model</h2>
+									</header>
+									<a class="image featured2">
+										<img src="images/projects/growth_transform_neuron.png" alt="" />
+									</a>
+									<p style="color:black">In neuromorphic machine learning, neural networks are designed in a bottom-up fashion - 
+									starting with the model of a single neuron and connecting them together to form a network. 
+									Although these spiking neural networks use biologically relevant neural dynamics and learning rules, 
+									they are not optimized w.r.t. a network objective.</p>
+									<p style="color:black">In contrast in traditional machine learning, neural networks are designed in a top-down manner, 
+									starting from a network objective (loss function), and reducing it to adjust the parameters of a 
+									non-spiking neuron model with static nonlinearities. Although these are highly optimized w.r.t. a 
+									network objective (usually a training error), they do not produce biologically relevant neural dynamics 
+									- potentially losing out on the performance and energy benefits of biological systems.</p>
+									<p style="color:black">We developed a spiking neuron and population model that reconciles the top-down and bottom-up 
+									approaches to achieve the best of both worlds. The dynamical and spiking responses of the neurons 
+									are derived by directly minimizing a network objective function under realistic physical constraints 
+									using Growth Transforms. The model exhibits several single-neuron response characteristics and population 
+									dynamics as seen in biological neurons. We are currently working on designing new scalable learning algorithms for
+									the spiking neuron model for cognitive applications.</p>
+									<ul class="actions">
+										<li><a href="https://www.frontiersin.org/articles/10.3389/fnins.2020.00425/full" class="button style1">Paper</a></li>
+										<li><a href="https://sites.google.com/view/growthtransform-neuralnetwork/home" class="button style1">Project Webpage</a></li>
+									</ul>
+								</article>
+							</div>
+
+                        
+					</div>
+				</div>
+				
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style2">
+					<!-- <div class="title">The Endorsements</div> -->
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><iframe width="340" height="200"
+                                    src="https://www.youtube.com/embed/MTjwxtF3uT8"></iframe></a>
+									<h3>Spiking support vector machines</h3>
+									<p align="justify" style="color:black">We developed a theoretical framework, through the choice of different primal-dual mappings, 
+									to design binary SVMs that exhibit noise-shaping properties like sigma-delta modulators, and SVMs 
+									that encode information about the classification hyperplane using spikes and bursts.  
+									The network was able to allocate its switching energy so that only the support vector neurons 
+									(i.e., the neurons that are the most important for classification) spike, while the remaining are silent. 
+									The network also exhibits firing rate and time-to-first-spike encoding of the input stimuli, as in biological 
+									neurons.</p>
+									<ul class="actions">
+										<li><a href="https://ieeexplore.ieee.org/document/7913698" class="button style1">Paper</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/generalized_svms.png" alt="" /></a>
+									<h3>Generalized support vector machines</h3>
+									<p align="justify" style="color:black">We extended the domain of Growth Transforms to bounded real variables and used it to design
+									novel variants of SVMs with different convex and quasi-convex loss functions through the choice of different 
+									primal-dual mappings. We proposed an efficient training algorithm based on polynomial growth transforms,
+									and compared and contrasted the properties of different SVMs using several synthetic and benchmark datasets. 
+									Simulation results showed better scalability and convergent properties than standard quadratic and 
+									nonlinear programming solvers.</p>
+									<ul class="actions">
+										<li><a href="https://ieeexplore.ieee.org/document/7902102" class="button style1">Paper</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/analog_optimization.png" alt="" /></a>
+									<h3>Continuous-time analog optimization</h3>
+									<p align="justify" style="color:black"> We developed a novel continuous-time analog optimization circuit using a growth transform-based 
+									fixed-point algorithm. The sub-threshold current-mode growth transform circuit inherently enforces optimization constraints and naturally converges 
+									to a local minimum of an objective function. Circuit simulations for several quadratic and 
+									linear cost functions with normalization constraints show an excellent match with floating-point software 
+									simulation results. The circuit is generic enough to solve a multitude of objective functions simply by
+									changing the external circuitry.</p>
+									<ul class="actions">
+										<li><a href="https://ieeexplore.ieee.org/document/8624043" class="button style1">Paper</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>	
+				
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style3">
+					<div class="title">Personal Projects</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-6 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/attention_network.png" alt="" /></a>
+									<h3>The 3rd YouTube-8M video understanding challenge</h3>
+									<p align="justify" style="color:black"> We participated in this Kaggle competition hosted by Google Research in summer 2019, 
+									where the task involved building a segment-level classifier for temporal localization of 
+									topics within a video, using the YouTube-8M dataset. The dataset consists of 8 million videos and 1000 classes. 
+									The challenge lay in the fact that there were only noisy video-level labels for the training dataset, and 
+									only a much smaller validation dataset with accurate segment-level labels. </p>
+									<p align="justify" style="color:black">We formulated the problem 
+									as a multiple-instance, multi-label learning and developed an attention-based mechanism to selectively 
+									emphasize the important frames in a video by trainable attention weights. The model performance was further
+									improved by constructing multiple sets of such attention networks in order to detect multiple high-level topics
+									in a single video. We further fine-tuned the models after training, using the segment-level dataset.
+									Our final model consisted of 
+									an ensemble of attention/multi-attention networks, attention-based deep bag of frames models, recurrent 
+									neural networks and convolutional neural networks. 
+									We ranked 13th out of 283 teams (top 5%) in the public 
+									leaderboard, and published our work at the 3rd Workshop on YouTube-8M Large Scale Video Understanding, 
+									at ICCV 2019 in Seoul, Korea.</p>
+									<ul class="actions">
+										<li><a href="https://arxiv.org/abs/1911.06866" class="button style1">Paper</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/speaker_change_detection.png" alt="" /></a>
+									<h3>Speaker change detection from EEG and eye-tracking data</h3>
+									<p align="justify" style="color:black"> We recorded and analyzed EEG and pupillometry data from volunteers to find signatures 
+									of speaker change detection in multi-talker speech. We used machine learning models like logistic regression 
+									and SVMs to predict speaker change detection with 78% accuracy from eye-tracking data pooled across subjects. </p>
+                                    <p align="justify" style="color:black">In an extension of this work, we analyzed behavioral responses from a listening test by volunteers for two 
+									multi-talker speech stimuli sets, one in a language familiar to the participants (English), and one unfamiliar 
+									(Mandarin). We found statistically significant lower miss rate and higher false alarm rate 
+									in the familiar vs unfamiliar language, and longer response times for the familiar vs unfamiliar language. 
+									A machine system, using state-of-the-art diarization system with x-vector embeddings, was also designed to 
+									perform the same task. We found that the machine system falls far short of human performance for both languages. </p>
+									<p align="justify" style="color:black">**This project started at Telluride Neuromorphic Cognition Engineering Workshop 2019, and was extended 
+									later. It was in collaboration with Dr. Sriram Ganapathy and Venkat Krishnamohan (IISc), Dr. Neeraj Sharma (CMU) and Dr. Lauren Fink (Max Planck Institute).</p>
+									<ul class="actions">
+										<li><a href="https://ieeexplore.ieee.org/document/9054294" class="button style1">Paper</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Highlights -->
+				<section id="highlights" class="wrapper style2">
+					<div class="title">Graduate Course Projects</div>
+					<div class="container">
+						<div class="row aln-center">
+							<!-- <div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/projects/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Predicting weights of widgets (Applications of Deep Neural Networks)</a></h3>
+									<p align="justify" style="color:black">We performed data cleaning and feature engineering on a synthetic 
+									tabular dataset (800,000
+									rows) consisting of shapes, compositions, internal dimensions and other features of different widgets.
+                                    We implemented and optimized different regression models including Deep Neural Networks and Random 
+									Forests on TensorFlow for predicting the weights of widgets from these features.
+									We ranked 8th out of 21 teams (top 39%) in the public leaderboard.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div> -->
+							<div class="col-6 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/face_recognition_src.png" alt="" /></a>
+									<h3>Sparse Representation for Face Recognition (Computer Vision)</h3>
+									<p align="justify" style="color:black">I implemented a sparse coding algorithm called Sparse Representation based
+									Classification (SRC) for face recognition and tested it on a subset (35 images from each of 19 subjects) 
+									of the publicly available 'Labeled Faces in the Wild' dataset -
+									a challenging dataset exhibiting great variations in pose, illumination and occlusion levels. Faces were
+									detected from the dataset using the Viola-Jones detector. I analyzed the
+									choice of two sets of features - down-sampled images and eigenfaces. For the latter, eigenfaces were constructed
+									from the pool of training images, and both training and test sets were projected on different number of eigenfaces
+									to compute features of different sizes. </p>
+									<p align="justify" style="color:black"> In all cases, eigenfaces gave a much more discriminative set of features 
+									compared to merely downsampling the images. Thus contrary to the theory behind sparse representation, for difficult
+									face databases with misalignments, occlusions, and variations in pose and illumination, it can be said that
+									the choice of features is critical even when
+									sparsity in the recognition problem is properly harnessed.</p>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul> -->
+								</section>
+							</div>
+							<div class="col-6 col-12-medium">
+								<section class="highlight">
+									<a class="image featured"><img src="images/projects/tempotron_odor_classification.png" alt="" /></a>
+									<h3>Odor classification with Tempotron (Biological Neural Computation)</i></h3>
+									<p align="justify" style="color:black"> We implemented Tempotron, 
+									a supervised synaptic learning algorithm that can distinguish between spike patterns having different 
+									second or third-order spike-time (or temporal) statistics. We applied the Tempotron model to toy datasets, 
+									as well as neural responses (spike data) recorded from the Antennal Lobe of the locust olfactory system in 
+									response to two odors (hexanol and octanol). The neural data is likely to have an even higher order temporal 
+									statistics, and our goal was to see if our model can sufficiently capture the temporal structure of the dataset 
+									(25 trials for each odor). We were able to obtain an odor classification accuracy of 90% with 
+									leave-one-out cross-validation. </p>
+									<p align="justify" style="color:black">We also analyzed whether the spatiotemporal structure of spike trains remained similar across trials 
+									over the entire duration of the odor stimulus. We found out that the spike statistics remain sufficiently 
+									distinct for each odor to produce classification accuracies greater than 90% over the entire duration, but 
+									accuracies are usually higher in the steady-state of odor presentation, indicating that it takes a few hundred 
+									milliseconds for the neural responses to produce stable, odor-specific patterns.</p>
+									<!-- <ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul> -->
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+				
+			<!-- Main -->
+				<div id="main" class="wrapper style3">
+					<div class="title">Undergraduate Thesis</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<section class="highlight">
+									<header class="style1">
+										<h2 style="color:lightcoral">Hand-shape based biometric authentication system using Collaborative Representation based Classification</h2>
+										<!-- <p>Tempus feugiat veroeros sed nullam dolore</p> -->
+									</header>
+									<a class="image featured2">
+										<img src="images/projects/biometric_authentication.png" alt="" />
+									</a>
+									<p align="justify" style="color:black">For our undergraduate final year project, we developed a hand-shape based biometric authentication 
+									system and verified it on a hand-image dataset of 300 images collected in the lab. The biometric authentication 
+									system used morphological operations to extract the hand contours, followed by Radon Transform in an optimal 
+									direction to produce an unique one-dimensional feature vector. For classification, we used Collaborative 
+									Representation based Classification (CRC), where the feature vector of a test image is coded over a dictionary 
+									of similarly processed training images from all subjects (or classes), and identified as a member of the class 
+									which produces the least reconstruction residual with Regularized Least Square (RLS). CRC is useful when there 
+									are very few training samples per class, which was the case for our dataset. We obtained a classification 
+									accuracy of 96.7% on our dataset.</p>
+								</section>
+							</div>
+                        <ul class="actions" align="justify">
+							<li><a href="https://ieeexplore.ieee.org/document/6707672" class="button style1">Paper 1</a></li>
+							<li><a href="https://ieeexplore.ieee.org/document/6745393" class="button style1">Paper 2</a></li>
+						</ul>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Contact Information</div>
+					<div class="container">
+<!-- 						<header class="style1">
+							<h2>Ipsum sapien elementum portitor?</h2>
+							<p>
+								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
+								Nam pharetra laoreet imperdiet volutpat etiam feugiat.
+							</p>
+						</header> -->
+						<div class="row">
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="https://formspree.io/xeqrzdeq">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
+
+							</div>
+							<div class="col-6 col-12-medium">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-home">Mailing Address</h3>
+													<p>
+														Campus Box 1042 <br />
+														Preston M. Green Hall <br />
+														Washington University in St. Louis <br />
+														1 Brookings Drive, St. Louis <br />
+														Missouri 63130, United States 
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-comment">Social</h3>
+													<p>
+														<a href="https://www.linkedin.com/in/ahanagangopadhyay/">LinkedIn</a><br />
+														<a href="https://github.com/ahanagangopadhyay">GitHub</a><br />
+														<a href="https://scholar.google.com/citations?user=fmr2rPYAAAAJ&hl=en">Google Scholar</a><br />
+														<a href="https://www.kaggle.com/ahana91">Kaggle</a> <br />
+														<a href="https://www.instagram.com/ahanagangopadhyay/?hl=en">Instagram</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-envelope">Email</h3>
+													<p>
+														ahana@wustl.edu
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-phone">Phone</h3>
+													<p>
+														+1 (314) 775-3064
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; Ahana Gangopadhyay</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
